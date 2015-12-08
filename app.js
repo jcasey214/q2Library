@@ -7,7 +7,12 @@ var books = ["Javascript-The Good Parts", "Eloquent Javascript",
 "Horton Hears a Who"];
 
 app.get('/cowsay/:cowsays', function(request, response){
-  response.send(cowsay.say({'text': request.params.cowsays}));
+  response.setHeader('content-type','text/html');
+  response.send(
+    "<pre>" +
+      cowsay.say({'text': request.params.cowsays}) +
+    "</pre>"
+  );
 })
 
 app.get('/', function(request, response){
