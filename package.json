@@ -12,6 +12,7 @@
   "dependencies": {
     "cowsay": "^1.1.2",
     "express": "^4.13.3",
+    "fortune-cookie": "0.0.1",
     "nodemon": "^1.8.1"
   }
 }
