@@ -13,7 +13,7 @@ app.get('/cowsay/:cowsays', function(request, response){
       cowsay.say({'text': request.params.cowsays}) +
     "</pre>"
   );
-})
+});
 
 app.get('/', function(request, response){
   response.json(books);
