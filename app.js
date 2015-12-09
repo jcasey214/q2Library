@@ -23,7 +23,8 @@ app.get('/cowsay/:cowsays', function(request, response){
   response.send(
     "<pre>" +
       cowsay.say({'text': request.params.cowsays}) +
-    "</pre>"
+    "</pre>" + 
+    "<div style='background-color:green; width:100%; height:800px;'></div>"
   );
 });
 
